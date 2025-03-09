@@ -1,0 +1,183 @@
+*{
+    margin: 0;
+}
+body{
+    font-family: "Roboto", sans-serif;
+}
+.navbar{
+    width: 100%;
+    height: 50px;
+    background-color: black;
+}
+
+.navbar-container{
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+    height: 100%;
+    color: white;
+    font-family: "Sen", sans-serif;
+}
+
+.logo-container{
+    flex: 1;
+}
+
+.logo{
+    
+    font-size: 30px;
+    color: red;
+}
+
+.menu-container{
+    flex: 6;
+}
+
+.menulista{
+    display: flex;
+    list-style: none;
+}
+
+.menulistaitens{
+    margin-right: 30px;
+}
+
+.menulistaitens.ativo{
+    font-weight: bold;
+}
+
+.perfil-container{
+    flex: 2;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.fotoperfiltextocontainer{
+    margin: 0 20px;
+}
+
+.fotoperfil{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.sidebar{
+    width: 50px;
+    height: 100%;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+}
+
+.esquerda-incones-menu{
+    color: white;
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+.tela{
+    background-color: grey;
+    min-height: 100vh;
+    color: white;
+}
+
+.conteudo-tela{
+    margin-left: 50px;
+}
+
+.filmes-em-destaque{
+    height: 50vh;
+}
+
+.lista-filmes-container{
+    padding: 0 20px;
+}
+
+.pacote-lista-filmes{
+    position: relative;
+}
+
+.lista-filmes{
+    display: flex;
+    align-items: center;
+    height: 300px;
+}
+
+.lista-filmes-itens{
+    margin-right: 30px;
+    position: relative;
+}
+
+.lista-filmes-itens:hover .filmes-lista-itens-img{
+    transform: scale(1.2);
+    margin: 0 30px;
+    opacity: 0.5;
+}
+
+.lista-filmes-itens:hover .filme-lista-itens-titulo,
+.lista-filmes-itens:hover .filme-lista-item-descricao,
+.lista-filmes-itens:hover .filme-lista-item-botao{
+    opacity: 1;
+}
+.filmes-lista-itens-img{
+    transition: all 1s ease-in-out;
+    width: 270px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.filme-lista-itens-titulo{
+    background-color: #333;
+    padding: 0 10px;
+    font-size: 32px;
+    font-weight: bold;
+    position: absolute;
+    top: 10%;
+    left: 50px;
+    opacity: 0;
+    transition: 1s all ease-in-out;
+}
+
+.filme-lista-item-descricao{
+    background-color: #333;
+    padding: 10px;
+    font-size: 14px;
+    position: absolute;
+    top: 30%;
+    left: 50px;
+    width: 230px;
+    opacity: 0;
+    transition: 1s all ease-in-out;
+}
+
+.filme-lista-item-botao{
+    padding: 10px;
+    background-color: green;
+    color: white;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    bottom: 20px;
+    left: 50px;
+    opacity: 0;
+    transition: 1s all ease-in-out;
+}
+
+.-seta{
+    font-size: 120px;
+    position: absolute;
+    top: 90px;
+    right: 0;
+    color: white;
+    opacity: 0.5;
+    cursor: pointer;
+}
